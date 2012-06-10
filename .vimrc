@@ -33,6 +33,12 @@ set hlsearch
 syntax on
 
 
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set autoindent
+set smartindent
+
 " Spell checking
 setlocal spell spelllang=en_us
 " Text settings
