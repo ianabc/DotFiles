@@ -84,3 +84,7 @@ autocmd FileType python set softtabstop=4
 autocmd FileType python set autoindent
 autocmd FileType python set smartindent
 
+" Set a different color scheme for vimdiffs
+if &diff
+	colorscheme greens
+endif
