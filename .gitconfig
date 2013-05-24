@@ -1,0 +1,13 @@
+[user]
+    name = Ian Allison
+    email = iana@pims.math.ca
+
+[core]
+	editor = vim
+	mergeoptions = "--no-ff"
+
+[diff]
+	tool = vimdiff
+
+[merge]
+	tool = vimdiff
