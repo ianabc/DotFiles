@@ -76,7 +76,7 @@ augroup module
 augroup END
 
 " Python Settings
-autocmd FileType python set python_highlight_all=1
+autocmd FileType python let python_highlight_all=1
 autocmd FileType python set expandtab
 autocmd FileType python set tabstop=4
 autocmd FileType python set shiftwidth=4
@@ -88,3 +88,10 @@ autocmd FileType python set smartindent
 if &diff
 	colorscheme greens
 endif
+
+" An attempt to break my arrow key habit by unmapping them
+for prefix in ['i', 'n', 'v']
+	for key in ['<Up>', '<Down>', '<Left>', '<Right>']
+		exe prefix . "noremap " . key . " <Nop>"
+	endfor
+endfor
