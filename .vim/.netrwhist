@@ -1,5 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/usr/local/parallel/19-07-2010/intel/build/qinstall/qdp++'
-let g:netrw_dirhist_2='/root'
-let g:netrw_dirhist_3='/home/iana/peer-review'
+let g:netrw_dirhist_cnt =0

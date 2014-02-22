@@ -95,3 +95,7 @@ for prefix in ['i', 'n', 'v']
 		exe prefix . "noremap " . key . " <Nop>"
 	endfor
 endfor
+
+let fortran_do_enddo=1
+let fortran_more_precise=1
+let fortran_have_tabs=1
