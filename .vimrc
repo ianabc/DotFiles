@@ -7,8 +7,13 @@ set shortmess=aAIsT
 set cmdheight=2
 set wrap
 set number
+set list
+set listchars=tab:▸\ ,eol:¬
 set linebreak
+set fileformats=unix,dos,mac
+set foldmethod=marker
 set laststatus=2
+set visualbell t_vb=".
 set statusline=%F%m%r%h%w\ %y\ %=[%c,%l](%p%%)
 "
 
@@ -26,6 +31,8 @@ set grepprg=grep\ -nH\ $*
 " 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
 " The following changes the default filetype back to 'tex':
 let g:tex_flavor='latex'
+let g:Tex_DefaultTargetFormat='pdf'
+let g:Tex_CompileRule_pdf='pdflatex -interaction=nonstopmode $*'
 
 " Add Highlight search, extra good with the star command *
 set incsearch
@@ -84,6 +91,7 @@ autocmd FileType python set softtabstop=4
 autocmd FileType python set autoindent
 autocmd FileType python set smartindent
 
+colorscheme hipster
 " Set a different color scheme for vimdiffs
 if &diff
 	colorscheme greens
