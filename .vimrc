@@ -2,7 +2,6 @@ set showcmd
 set ruler
 set incsearch
 set wildmenu
-syntax enable
 set shortmess=aAIsT
 set cmdheight=2
 set wrap
@@ -15,6 +14,10 @@ set foldmethod=marker
 set laststatus=2
 set visualbell t_vb=".
 set statusline=%F%m%r%h%w\ %y\ %=[%c,%l](%p%%)
+set t_Co=256
+set t_AB=[48;5;%dm
+set t_AF=[38;5;%dm
+
 "
 
 " Filetype stuff
@@ -50,7 +53,7 @@ set smartindent
 setlocal spell spelllang=en_us
 " Text settings
 autocmd BufRead,BufNewFile *.txt set filetype=text
-autocmd Filetype text set textwidth=80
+autocmd Filetype text set textwidth=72
 
 " PHP Settings
 autocmd Filetype php set textwidth=75
@@ -91,11 +94,6 @@ autocmd FileType python set softtabstop=4
 autocmd FileType python set autoindent
 autocmd FileType python set smartindent
 
-colorscheme hipster
-" Set a different color scheme for vimdiffs
-if &diff
-	colorscheme greens
-endif
 
 " An attempt to break my arrow key habit by unmapping them
 for prefix in ['i', 'n', 'v']
@@ -110,3 +108,9 @@ let fortran_have_tabs=1
 
 hi clear SpellBad
 hi SpellBad cterm=underline
+
+colorscheme hipster
+" Set a different color scheme for vimdiffs
+if &diff
+	colorscheme greens
+endif
