@@ -3,6 +3,11 @@ servers = (
   { address = "open.ircnet.net"; chatnet = "IRCnet"; port = "6667"; },
   { address = "irc.efnet.org"; chatnet = "EFNet"; port = "6667"; },
   { 
+    address = "irc.freenode.net";
+    chatnet = "Freenode";
+    port = "6667";
+  },
+  { 
     address = "irc.undernet.org";
     chatnet = "Undernet";
     port = "6667";
@@ -88,6 +93,7 @@ chatnets = {
     max_whois = "30";
   };
   SILC = { type = "SILC"; };
+  Freenode = { type = "IRC"; };
 };
 
 channels = (

@@ -104,7 +104,14 @@ endfor
 
 let fortran_do_enddo=1
 let fortran_more_precise=1
-let fortran_have_tabs=1
+let fortran_have_tabs=0
+
+autocmd FileType fortran set expandtab
+autocmd FileType fortran set tabstop=2
+autocmd FileType fortran set shiftwidth=2
+autocmd FileType fortran set softtabstop=2
+autocmd FileType fortran set autoindent
+autocmd FileType fortran set smartindent
 
 hi clear SpellBad
 hi SpellBad cterm=underline
