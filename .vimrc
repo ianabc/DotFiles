@@ -58,6 +58,10 @@ setlocal spell spelllang=en_us
 autocmd BufRead,BufNewFile *.txt set filetype=text
 autocmd Filetype text set textwidth=72
 
+" Github settings
+autocmd Filetype gitcommit set tw=72
+autocmd Filetype gitcommit set wrap
+
 " PHP Settings
 autocmd Filetype php set textwidth=75
 autocmd Filetype php set tags
