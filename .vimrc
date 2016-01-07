@@ -47,6 +47,7 @@ syntax on
 
 
 set tabstop=4
+set expandtab
 set shiftwidth=4
 set softtabstop=4
 set autoindent
@@ -57,6 +58,10 @@ setlocal spell spelllang=en_us
 " Text settings
 autocmd BufRead,BufNewFile *.txt set filetype=text
 autocmd Filetype text set textwidth=72
+
+" Markdown settings
+autocmd BufRead,BufNewFile *.md set filetype=markdown
+autocmd BufRead,BufNewFile *.md setlocal formatoptions=ant textwidth=80 wrapmargin=0
 
 " Github settings
 autocmd Filetype gitcommit set tw=72
@@ -120,11 +125,12 @@ autocmd FileType fortran set softtabstop=2
 autocmd FileType fortran set autoindent
 autocmd FileType fortran set smartindent
 
-hi clear SpellBad
-hi SpellBad cterm=underline
 
 colorscheme hipster
 " Set a different color scheme for vimdiffs
 if &diff
 	colorscheme greens
 endif
+
+"hi clear SpellBad
+"i SpellBad cterm=underline

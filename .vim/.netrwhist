@@ -1,7 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/Users/iana/notes'
 let g:netrw_dirhist_2='/home/iana/.mutt'
 let g:netrw_dirhist_3='/home/iana/whatsinit'
 let g:netrw_dirhist_4='/home/iana/nrqcd/io.f90'
 let g:netrw_dirhist_5='/home/iana/.motion'
+let g:netrw_dirhist_6='/home/iana/centos_71/CentOS_71'
+let g:netrw_dirhist_7='/home/iana/centos_71/packer/scripts'
