@@ -61,7 +61,7 @@ autocmd Filetype text set textwidth=72
 
 " Markdown settings
 autocmd BufRead,BufNewFile *.md set filetype=markdown
-autocmd BufRead,BufNewFile *.md setlocal formatoptions=ant textwidth=80 wrapmargin=0
+autocmd BufRead,BufNewFile *.md setlocal formatoptions=nt textwidth=80 wrapmargin=0
 
 " Github settings
 autocmd Filetype gitcommit set tw=72
