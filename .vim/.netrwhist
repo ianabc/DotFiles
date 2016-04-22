@@ -1,10 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
-let g:netrw_dirhist_1='/Users/iana/notes'
-let g:netrw_dirhist_2='/home/iana/.mutt'
-let g:netrw_dirhist_3='/home/iana/whatsinit'
-let g:netrw_dirhist_4='/home/iana/nrqcd/io.f90'
-let g:netrw_dirhist_5='/home/iana/.motion'
-let g:netrw_dirhist_6='/home/iana/centos_71/CentOS_71'
-let g:netrw_dirhist_7='/home/iana/centos_71/packer/scripts'
-let g:netrw_dirhist_8='/Users/iana/sfu'
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/Users/iana/c7Goldv1/ansible/roles/grub-serial/files'
+let g:netrw_dirhist_2='/Users/iana/c7Goldv1/ansible/roles/disable-ssh-password/tasks'
