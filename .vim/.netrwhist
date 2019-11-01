@@ -1,11 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/Users/iana/c7Goldv1/ansible/roles/grub-serial/files'
-let g:netrw_dirhist_2='/Users/iana/c7Goldv1/ansible/roles/disable-ssh-password/tasks'
-let g:netrw_dirhist_3='/Users/iana/openstack/provisioning'
-let g:netrw_dirhist_4='/Users/iana/openstack/provisioning/roles/vagrant'
-let g:netrw_dirhist_5='/Users/iana/openstack/provisioning/roles/vagrant/defaults'
-let g:netrw_dirhist_6='/Users/iana/openstack/provisioning/roles/vagrant'
-let g:netrw_dirhist_7='/Users/iana/openstack/provisioning'
-let g:netrw_dirhist_8='/Users/iana/openstack/provisioning/roles/jhopenstack'
-let g:netrw_dirhist_9='/Users/iana/openstack/provisioning/roles/jhopenstack/tasks'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/private/var/tmp/website-landing/config/_default'
+let g:netrw_dirhist_2='/Users/iana/bcdata-website/config'
+let g:netrw_dirhist_3='/Users/iana/bcdata-website/static'
