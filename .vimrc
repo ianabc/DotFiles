@@ -40,6 +40,10 @@ let g:tex_flavor='latex'
 let g:Tex_DefaultTargetFormat='pdf'
 let g:Tex_CompileRule_pdf='pdflatex -interaction=nonstopmode $*'
 
+let g:livepreview_previewer='open -a Preview'
+let g:livepreview_cursorhold_recompile=0
+autocmd Filetype tex setl updatetime=1
+
 " Add Highlight search, extra good with the star command *
 set incsearch
 set hlsearch
@@ -58,6 +62,13 @@ setlocal spell spelllang=en_us
 " Text settings
 autocmd BufRead,BufNewFile *.txt set filetype=text
 autocmd Filetype text set textwidth=72
+
+" HTML settings
+autocmd BufRead,BufNewFile *.html set filetype=html
+autocmd Filetype html set tabstop=2
+autocmd Filetype html set shiftwidth=2
+autocmd Filetype html set softtabstop=2
+
 
 " Markdown settings
 autocmd BufRead,BufNewFile *.md set filetype=markdown
@@ -134,3 +145,12 @@ endif
 
 "hi clear SpellBad
 "i SpellBad cterm=underline
+
+"Markdown preview plugin
+let g:previm_open_cmd = 'open -a "Google Chrome"'
+augroup PrevimSettings
+    autocmd!
+    autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
+augroup END
+
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
