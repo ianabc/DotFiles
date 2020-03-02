@@ -1,5 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/private/var/tmp/website-landing/config/_default'
 let g:netrw_dirhist_2='/Users/iana/bcdata-website/config'
 let g:netrw_dirhist_3='/Users/iana/bcdata-website/static'
+let g:netrw_dirhist_4='/Users/iana/syzygy-infrastructure/ansible/roles/internal/jupyterhub'
+let g:netrw_dirhist_5='/Users/iana/syzygy-infrastructure/ansible/roles/internal/prometheus-node-exporter'
+let g:netrw_dirhist_6='/Users/iana/prima2021/content'
+let g:netrw_dirhist_7='/Users/iana/prima2021/layouts/partials'
